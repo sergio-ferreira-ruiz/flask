@@ -4,7 +4,6 @@
 #equipos={1:'Cádiz CB Gades', 2:'Mergablo Conil'}
 #periodos={1:{1:2,2:15},2:{1:11,2:3},3:{1:4,2:12},
 #     4:{1:19,2:0},5:{1:10,2:4},6:{1:10,2:4}}
-import sys
 def tanper(f):
     periodos={}
     equipos={}
@@ -30,5 +29,3 @@ def tanper(f):
             else:
                 periodos[idcuar][idEq]+=puntos         
     return equipos, periodos
-tanteo=open(sys.argv[1],'r')
-tanteo.close()
