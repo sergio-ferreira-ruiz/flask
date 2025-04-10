@@ -4,7 +4,7 @@ from flask import Flask
 app=Flask(__name__)
 @app.route('/')
 def pintafab():
-    estadif=open(sys.argv[1],'r')
+    estadif=open('envivo.csv','r')
     cuartos,teams= tanper(estadif)
     salida=''
     for cuarto, parcial in cuartos.items():
