@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Ferreira Ruiz</title>
+</head>
+<body>
+    <header>
+        <h1>Sergio Ferreira Ruiz</h1>
+    </header>
+    <h2>Tabla de partido</h2>
+    {% for i in parciales %}
+        <p>{{i}}º Cuarto.&emsp;
+        {% for j in teams %}
+            {{teams[j]}}:{{parciales[i][j]}}.&emsp;
+        {% endfor %}
+        </p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
