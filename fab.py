@@ -28,4 +28,4 @@ def tanper(f):
                 periodos[idcuar][idEq]=puntos
             else:
                 periodos[idcuar][idEq]+=puntos         
-    return equipos, periodos
+    return periodos, equipos
